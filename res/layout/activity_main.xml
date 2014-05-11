@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <ImageButton
+        android:id="@+id/pigButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/catButton"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/pig" />
+
+    <ImageButton
+        android:id="@+id/horseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cowButton"
+        android:layout_below="@+id/cowButton"
+        android:src="@drawable/horse" />
+
+    <ImageButton
+        android:id="@+id/sheepButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/catButton"
+        android:layout_alignTop="@+id/horseButton"
+        android:src="@drawable/sheep" />
+
+    <ImageButton
+        android:id="@+id/roosterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pigButton"
+        android:layout_below="@+id/pigButton"
+        android:src="@drawable/rooster" />
+
+    <ImageButton
+        android:id="@+id/cowButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/pigButton"
+        android:src="@drawable/cow" />
+
+    <ImageButton
+        android:id="@+id/catButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sheepButton"
+        android:layout_toRightOf="@+id/pigButton"
+        android:src="@drawable/cat" />
+    
+</RelativeLayout>
